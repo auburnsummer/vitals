@@ -38,7 +38,7 @@ some_function_that_downloads_an_rdzip()
 Vitals works by parsing the main.rdlevel file as a JSON document, then running
 through a sequence of functions that extract different bits of information.
 
-Please look at [lib/extract.js] for the list of currently implemented extractors.
+Please look at [lib/extract.js](lib/extract.js) for the list of currently implemented extractors.
 You can get vitals to pull out more things by adding more extractor functions.
 
 # Licence
