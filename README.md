@@ -48,4 +48,5 @@ provided licences. You must abide by the terms of at least one of the licences
 to use this software.
 
 [AGPL](LICENCE)
+
 [Hippocratic](ETHICS)
