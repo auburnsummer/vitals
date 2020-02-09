@@ -17,6 +17,6 @@
     "jszip": "^3.2.2",
     "lodash": "^4.17.15",
     "minimist": "^1.2.0",
-    "rdlevel": "git+https://git@github.com/rhythm-cafe/rdlevel.git"
+    "rdlevel": "git+https://git@github.com/auburnsummer/rdlevel.git"
   }
 }
