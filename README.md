@@ -40,13 +40,3 @@ through a sequence of functions that extract different bits of information.
 
 Please look at [lib/extract.js](lib/extract.js) for the list of currently implemented extractors.
 You can get vitals to pull out more things by adding more extractor functions.
-
-# Licence
-
-This is licenced under a dual licencing system. You can choose either of the
-provided licences. You must abide by the terms of at least one of the licences
-to use this software.
-
-[AGPL](LICENCE)
-
-[Hippocratic](ETHICS)
