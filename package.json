@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "bin": "lib/cli.js",
   "scripts": {
-    "test": "npx eslint ."
+    "test": "npx eslint . && npx tap"
   },
   "author": "",
   "license": "ISC",
