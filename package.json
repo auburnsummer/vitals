@@ -5,12 +5,15 @@
   "main": "lib/index.js",
   "bin": "lib/cli.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx eslint ."
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "standard": "^14.3.1"
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1",
+    "tap": "^14.10.6"
   },
   "dependencies": {
     "imgur": "^0.3.1",
