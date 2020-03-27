@@ -19,7 +19,6 @@
     "imgur": "^0.3.1",
     "jszip": "^3.2.2",
     "lodash": "^4.17.15",
-    "minimist": "^1.2.2",
-    "rdlevel": "git+https://git@github.com/auburnsummer/rdlevel.git"
+    "minimist": "^1.2.5"
   }
 }
