@@ -1,5 +1,7 @@
 # vitals
 
+![](https://api.travis-ci.com/auburnsummer/vitals.svg?branch=master&status=passed) ![](https://img.shields.io/github/license/auburnsummer/vitals)
+
 vitals takes an .rdzip file from Rhythm Doctor and produces a JSON object
 of the important metadata from it.
 
@@ -35,8 +37,11 @@ some_function_that_downloads_an_rdzip()
 
 # Contributing
 
-Vitals works by parsing the main.rdlevel file as a JSON document, then running
-through a sequence of functions that extract different bits of information.
+Hi, thanks for being interested in contributing!
 
-Please look at [lib/extract.js](lib/extract.js) for the list of currently implemented extractors.
+This is eventually going to be part of a larger project called Orchard, which is meant for
+providing a more consistent experience for Rhythm Doctor custom levels. When I get that set up,
+I'll have a proper code of conduct and contributing documents, etc, etc.
+
+In the meantime, you can look at [lib/extract.js](lib/extract.js) for the list of currently implemented extractors.
 You can get vitals to pull out more things by adding more extractor functions.
