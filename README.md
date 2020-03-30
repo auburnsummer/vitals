@@ -1,6 +1,6 @@
 # vitals
 
-[![](https://api.travis-ci.com/auburnsummer/vitals.svg?branch=master&status=passed)](https://travis-ci.com/github/auburnsummer/vitals) [![](https://img.shields.io/github/license/auburnsummer/vitals)](LICENCE)
+[![](https://api.travis-ci.com/auburnsummer/vitals.svg?branch=master&status=passed)](https://travis-ci.com/github/auburnsummer/vitals) [![](https://img.shields.io/github/license/auburnsummer/vitals?color=e597d5)](LICENCE)
 
 vitals takes an .rdzip file from Rhythm Doctor and produces a JSON object
 of the important metadata from it.

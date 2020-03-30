@@ -1,12 +1,38 @@
 const tap = require('tap');
-const fs = require('fs');
+
 const vitals = require('../lib/index.js')
+const fs = require('fs');
+const _ = require('lodash');
+const Promise = require('bluebird');
+
+const readFile_p = Promise.promisify(fs.readFile)
+
+const testRdzip = async (rdzipFilename, expected) => {
+  const readIn = await readFile_p(rdzipFilename);
+  const result = await vitals.analyse(readIn);
+  return _.isMatch(result, expected);
+}
+
 
 tap.pass('this is fine');
 
-/*
- * Tests an rdzip, given a filename and the expected JSON output.
- */
-const testRdzip = (rdzipFilename, expected) => {
-  readIn = fs.readFileSync(rdzipFilename);
-}
+
+tap.test('Correct header info from Know You', childTest => {
+  return testRdzip("test/Andrew_Huang_-_Know_You.rdzip", {
+    artist: 'Andrew Huang',
+    song: 'Know You',
+    difficulty: 1,
+    seizureWarning: false,
+    description: 'Two lonely stars\r, wandering in the dark...',
+    maxBPM: 78.5,
+    minBPM: 78.5,
+    tags: [ 'slow', 'pop', '1p' ],
+    authors: [ 'lugi' ],
+    singlePlayer: true,
+    twoPlayer: false
+  })
+  .then( (result) => {
+    console.log(result);
+    childTest.ok(result);
+  });
+})
