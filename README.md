@@ -28,7 +28,7 @@ of the important metadata from it.
 You can also use it in a script:
 
 ```
-const vitals = require('vitals')
+const vitals = require('@auburnsummer/vitals')
 some_function_that_downloads_an_rdzip()
 .then( (buffer) => {
   console.log(vitals.analyse(buffer))
