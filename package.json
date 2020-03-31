@@ -1,6 +1,6 @@
 {
   "name": "@auburnsummer/vitals",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "produce a short summary of an rdzip",
   "main": "lib/index.js",
   "bin": "lib/cli.js",
@@ -9,6 +9,7 @@
     "type": "git",
     "url": "https://github.com/auburnsummer/vitals.git"
   },
+  "files": ["lib/*"],
   "scripts": {
     "test": "npx eslint . && npx tap"
   },
