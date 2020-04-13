@@ -9,6 +9,7 @@ of the important metadata from it.
 ```
 > npx @auburnsummer/vitals Andrew_Huang_-_Know_You.rdzip
 {
+  sha256: 'e86fbc334db27ebd59dbc472e38849c871715c787f5d11f30534a05522462340',
   artist: 'Andrew Huang',
   song: 'Know You',
   difficulty: 1,
@@ -21,8 +22,7 @@ of the important metadata from it.
   authors: [ 'lugi' ],
   singlePlayer: true,
   twoPlayer: false,
-  imageURL: 'https://i.imgur.com/Q4FBPCg.png',
-  icon: 'https://i.imgur.com/ka7O8Gt.png'
+  songNameHue: 0.47
 }
 ```
 
