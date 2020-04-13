@@ -9,7 +9,7 @@ const readFile_p = Promise.promisify(fs.readFile)
 
 const testRdzip = async (rdzipFilename, expected) => {
   const readIn = await readFile_p(rdzipFilename);
-  const result = await vitals.analyse(readIn, true);
+  const result = await vitals.analyse(readIn);
   return _.isMatch(result, expected);
 }
 
