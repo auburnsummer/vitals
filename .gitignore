@@ -107,3 +107,5 @@ dist
 .vscode-test
 
 abcde.js
+
+.DS_Store
