@@ -72,6 +72,9 @@ const schema = {
     'icon_ipfs': nullable({
       'type': 'string'
     }),
+    'song_name_hue': {
+      'type': 'number'
+    },
     'rdzip_ipfs': {
       'type': 'string'
     }
