@@ -13,7 +13,7 @@
     "lib/*"
   ],
   "scripts": {
-    "test": "npx eslint . && npx tap"
+    "test": "npx eslint . && npx tap --no-timeout"
   },
   "author": "auburnsummer",
   "license": "AGPL-3.0-or-later",

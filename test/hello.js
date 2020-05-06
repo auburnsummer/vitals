@@ -111,8 +111,22 @@ const checkSchema = (result) => {
 
 tap.pass('this is fine');
 
-tap.test('Know You', async childTest => {
+tap.test('Know You aligns to schema', async childTest => {
   const buffer = await readFile_p("test/Andrew_Huang_-_Know_You.rdzip");
+  const output = await vitals.analyse(buffer, "all");
+
+  childTest.ok(checkSchema(output));
+})
+
+tap.test('Triplet thing aligns to schema', async childTest => {
+  const buffer = await readFile_p("test/auburnsummer - triplet thing.rdzip");
+  const output = await vitals.analyse(buffer, "all");
+
+  childTest.ok(checkSchema(output));
+})
+
+tap.test('Jazz Candy aligns to schema', async childTest => {
+  const buffer = await readFile_p("test/Nate_Harrell_-_Jazz_Candy_VIP.rdzip");
   const output = await vitals.analyse(buffer, "all");
 
   childTest.ok(checkSchema(output));
