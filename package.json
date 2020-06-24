@@ -1,6 +1,6 @@
 {
   "name": "@auburnsummer/vitals",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "produce a short summary of an rdzip",
   "main": "lib/index.js",
   "bin": "lib/cli.js",
