@@ -29,8 +29,8 @@ const schema = {
   'properties': {
     'sha256': {
       'type': 'string',
-      'minLength': 64,
-      'maxLength': 64,
+      'minLength': 44,
+      'maxLength': 44,
     },
     'artist': {
       'type': 'string',
@@ -77,10 +77,29 @@ const schema = {
     },
     'rdzip_ipfs': {
       'type': 'string'
+    },
+    'has_classics': {
+      'type': 'boolean'
+    },
+    'has_swing': {
+      'type': 'boolean'
+    },
+    'has_freetimes': {
+      'type': 'boolean'
+    },
+    'has_oneshots': {
+      'type': 'boolean'
+    },
+    'has_squareshots': {
+      'type': 'boolean'
+    },
+    'has_holds': {
+      'type': 'boolean'
     }
   },
   'required' : ['sha256', 'artist', 'song', 'difficulty', 'seizure_warning', 'description', 'max_bpm',
-                'min_bpm', 'last_updated', 'single_player', 'two_player', 'image_ipfs', 'icon_ipfs']
+                'min_bpm', 'last_updated', 'single_player', 'two_player', 'image_ipfs', 'icon_ipfs',
+              'has_classics', 'has_swing', 'has_freetimes', 'has_oneshots', 'has_squareshots', 'has_holds']
 }
 
 
