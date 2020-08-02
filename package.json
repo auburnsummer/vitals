@@ -1,6 +1,6 @@
 {
   "name": "@auburnsummer/vitals",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "produce a short summary of an rdzip",
   "main": "lib/index.js",
   "bin": "lib/cli.js",
@@ -27,6 +27,7 @@
   "dependencies": {
     "axios": "^0.19.2",
     "base-x": "^3.0.8",
+    "blake3": "^2.1.4",
     "bluebird": "^3.7.2",
     "dotenv": "^8.2.0",
     "form-data": "^3.0.0",
